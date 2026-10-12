@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 1.27
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,16 +60,22 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
+          "remove_islands": 1,
+          "thermal_relief_gap": 0.25,
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +240,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -475,7 +490,7 @@
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
       "stacked_pin_name": "warning",
-      "unannotated": "error",
+      "unannotated": "ignore",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
       "unit_value_mismatch": "error",
@@ -518,7 +533,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "<no net>"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -669,7 +689,7 @@
         "uuid": "d90a1347-9959-4d04-9148-5da039fa8941"
       }
     ],
-    "used_designators": "A1,uP1,DS1,U1-6,#PWR1-30,D1-2,SW1-3,J1-7,H1-4,#FLG1,R1-14,PS1,JP1-4,BUTTON1,EKSTERNAL1,SERIAL1,I2C1,SPI1,LM2596_E1,RN1-2",
+    "used_designators": "A1,uP1,DS1,U1-6,#PWR1-30,D1-2,SW1-3,J1-7,H1-4,#FLG1,R1-14,PS1,JP1-4,BUTTON1,EKSTERNAL1,MAX1,SERIAL1,I2C1,SPI1,LM2596_E1,RN1-2,RS1,LM1",
     "variants": []
   },
   "sheets": [
